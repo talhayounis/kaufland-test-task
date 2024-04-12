@@ -1,0 +1,38 @@
+<div class="faq-page">
+    <div class="content">
+  
+      <div class="faq-title-section">
+            <div>
+              <h1>Kaufland Test Task</h1>
+              <p>by Talha Younis</p>
+            </div>
+  
+         
+      </div>
+  
+      <ng-container *ngFor="let faq of questions">
+        <mat-expansion-panel hideToggle hideToggle="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+                <h2>{{ faq.question }}</h2>
+            </mat-panel-title>
+            <mat-panel-description>
+              <div>
+                <mat-icon class="expand-open">expand_more</mat-icon>
+                <mat-icon class="expand-close">expand_less</mat-icon>
+              </div>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <p>{{faq.answer}}</p>
+        </mat-expansion-panel>
+      </ng-container>
+      
+      <button *ngIf="hasMoreData" class="load-more-button" [ngClass]="{ 'loading': isLoadingMore }" (click)="loadMore()">
+        Load More 
+        <span class="loader" *ngIf="isLoadingMore"></span>
+      </button>
+    </div>
+  
+  
+    
+  </div>
