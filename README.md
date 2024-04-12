@@ -31,7 +31,11 @@ The FAQ page fetches data from a dummy API (https://jsonplaceholder.typicode.com
 
 # Technologies used:
 
-Angular: A popular framework for building web applications.
-HttpClient: Used to fetch data from the API.
-ngFor directive: Used to iterate through a list of questions.
-ngIf directive: Used to conditionally show/hide the answer content.
+# Angular: 
+A popular framework for building web applications.
+# HttpClient:
+ Used to fetch data from the API.
+# ngFor directive:
+ Used to iterate through a list of questions.
+# ngIf directive:
+ Used to conditionally show/hide the answer content.
